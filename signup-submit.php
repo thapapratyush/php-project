@@ -32,6 +32,13 @@
         $seeking_gender = $_POST["seeking_gender"];
         $min_age = $_POST["min_age"];
         $max_age = $_POST["max_age"];
+
+        $usr_array = array(':name' => $name, ':gender' => $gender, ':age' => $age, ':personality_type' => $personality_type, ':os' => $os, ':seeking_gender' => $seeking_gender ,':min_age' => $min_age, ':max_age' => $max_age );
+
+        $stmt = $db->prepare("INSERT INTO singles VALUES (NULL, :name, :gender, :age, :personality_type, :os, :seeking_gender, :min_age, :max_age);");
+        $stmt->execute($usr_array);
+        
+        $db = null;
     }
 ?>
 
