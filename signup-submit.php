@@ -27,8 +27,9 @@
         $name = $_POST["name"];
         $gender = $_POST["gender"];
         $age = $_POST["age"];
-        $type = $_POST["personality_type"];
+        $personality_type = $_POST["personality_type"];
         $os = $_POST["os"];
+        $seeking_gender = $_POST["seeking_gender"];
         $min_age = $_POST["min_age"];
         $max_age = $_POST["max_age"];
     }

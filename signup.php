@@ -35,14 +35,14 @@
 
     <div>
         Seeking: <br/>
-        <label><input type="checkbox"  name="min_age"checked="checked"/> Male</label>
-        <label><input type="checkbox" name="max_age"/> Female</label>
+        <label><input type="checkbox" name="seeking_gender" checked="checked"/> Male</label>
+        <label><input type="checkbox" name="seeking_gender"/> Female</label>
     </div>
 
     <div>
         Between the ages of: <br />
-        <input type="text" size="5" maxlength="2" /> and
-        <input type="text" size="5" maxlength="2" />
+        <input type="text" size="5" name="min_age"maxlength="2" /> and
+        <input type="text" size="5" name="max_age" maxlength="2" />
     </div>
 
     <div>
