@@ -39,7 +39,17 @@
         $stmt->execute($usr_array);
         
         $db = null;
+    } else {
+        echo $logs;
+        ?>
+        <strong>Thank you!</strong><br><br>
+    Welcome to NerdLuv, <?= $usr['name'] ?>! <br><br>
+    Now <a href="matches.php">log in to see your matches!</a>
+    </p>        
+
+    <?php
     }
-?>
+    ?>
+    }
 
 <?php include("bottom.html"); ?>
