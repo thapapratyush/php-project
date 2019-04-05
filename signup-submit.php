@@ -16,7 +16,6 @@
             }
 
             //implement name check
-            //implement writing to server or file
         }
     }
     validate_data();
