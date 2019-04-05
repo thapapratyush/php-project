@@ -23,6 +23,14 @@
     if ($logs !== ""){          //if no errors connect to database
         $db = new PDO("mysql:dbname=singles;host=localhost", "root", "toor");
         $db->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
+
+        $name = $_POST["name"];
+        $gender = $_POST["gender"];
+        $age = $_POST["age"];
+        $type = $_POST["personality_type"];
+        $os = $_POST["os"];
+        $min_age = $_POST["min_age"];
+        $max_age = $_POST["max_age"];
     }
 ?>
 
